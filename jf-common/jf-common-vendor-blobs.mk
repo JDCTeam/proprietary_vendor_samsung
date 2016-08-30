@@ -1,4 +1,5 @@
 # Copyright (C) 2015 The CyanogenMod Project
+# Copyright (C) 2015 The JDCTeam
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -20,7 +21,7 @@ PRODUCT_COPY_FILES += \
 	vendor/samsung/jf-common/proprietary/bin/radish:system/bin/radish \
 	vendor/samsung/jf-common/proprietary/bin/thermal-engine:system/bin/thermal-engine \
 	vendor/samsung/jf-common/proprietary/vendor/lib/libqti-perfd-client.so:system/vendor/lib/libqti-perfd-client.so \
-	vendor/samsung/jf-common/proprietary/vendor/firmware/bcm4335_V0343.0353.hcd:system/vendor/firmware/bcm4335_V0343.0353.hcd \
+	vendor/samsung/jf-common/proprietary/vendor/firmware/bcm4335_V0343.0353.hcd:system/vendor/firmware/bcm4335.hcd \
 	vendor/samsung/jf-common/proprietary/lib/libacdbloader.so:system/lib/libacdbloader.so \
 	vendor/samsung/jf-common/proprietary/lib/libaudcal.so:system/lib/libaudcal.so \
 	vendor/samsung/jf-common/proprietary/lib/libcsd-client.so:system/lib/libcsd-client.so \
@@ -110,7 +111,6 @@ PRODUCT_COPY_FILES += \
 	vendor/samsung/jf-common/proprietary/vendor/lib/librs_adreno.so:system/vendor/lib/librs_adreno.so \
 	vendor/samsung/jf-common/proprietary/vendor/lib/librs_adreno_sha1.so:system/vendor/lib/librs_adreno_sha1.so \
 	vendor/samsung/jf-common/proprietary/vendor/lib/libsc-a3xx.so:system/vendor/lib/libsc-a3xx.so \
-	vendor/samsung/jf-common/proprietary/etc/firmware/vidc_1080p.fw:system/etc/firmware/vidc_1080p.fw \
 	vendor/samsung/jf-common/proprietary/vendor/lib/libuiblur.so:system/vendor/lib/libuiblur.so \
 	vendor/samsung/jf-common/proprietary/etc/firmware/a300_pfp.fw:system/etc/firmware/a300_pfp.fw \
 	vendor/samsung/jf-common/proprietary/etc/firmware/a300_pm4.fw:system/etc/firmware/a300_pm4.fw \
@@ -143,7 +143,6 @@ PRODUCT_COPY_FILES += \
 	vendor/samsung/jf-common/proprietary/lib/hw/sensorhubs.msm8960.so:system/lib/hw/sensorhubs.msm8960.so \
 	vendor/samsung/jf-common/proprietary/bin/time_daemon:system/bin/time_daemon \
 	vendor/samsung/jf-common/proprietary/lib/libTimeService.so:system/lib/libTimeService.so \
-	vendor/samsung/jf-common/proprietary/vendor/lib/libtime_genoff.so:system/vendor/lib/libtime_genoff.so \
 	vendor/samsung/jf-common/proprietary/etc/wifi/bcmdhd_apsta.bin:system/etc/wifi/bcmdhd_apsta.bin \
 	vendor/samsung/jf-common/proprietary/etc/wifi/bcmdhd_ibss.bin:system/etc/wifi/bcmdhd_ibss.bin \
 	vendor/samsung/jf-common/proprietary/etc/wifi/bcmdhd_mfg.bin:system/etc/wifi/bcmdhd_mfg.bin \
@@ -196,7 +195,6 @@ PRODUCT_COPY_FILES += \
 	vendor/samsung/jf-common/proprietary/rild/cdma/bin/rild:system/rild/cdma/bin/rild \
 	vendor/samsung/jf-common/proprietary/rild/cdma/bin/rmt_storage:system/rild/cdma/bin/rmt_storage \
 	vendor/samsung/jf-common/proprietary/rild/cdma/lib/libatparser.so:system/rild/cdma/lib/libatparser.so \
-	vendor/samsung/jf-common/proprietary/rild/cdma/lib/libcnefeatureconfig.so:system/rild/cdma/lib/libcnefeatureconfig.so \
 	vendor/samsung/jf-common/proprietary/rild/cdma/lib/libfactoryutil.so:system/rild/cdma/lib/libfactoryutil.so \
 	vendor/samsung/jf-common/proprietary/rild/cdma/lib/libomission_avoidance.so:system/rild/cdma/lib/libomission_avoidance.so \
 	vendor/samsung/jf-common/proprietary/rild/cdma/lib/libreference-ril.so:system/rild/cdma/lib/libreference-ril.so \
@@ -204,7 +202,6 @@ PRODUCT_COPY_FILES += \
 	vendor/samsung/jf-common/proprietary/rild/cdma/lib/librmnetctl.so:system/rild/cdma/lib/librmnetctl.so \
 	vendor/samsung/jf-common/proprietary/rild/cdma/lib/libsec-ril.so:system/rild/cdma/lib/libsec-ril.so \
 	vendor/samsung/jf-common/proprietary/rild/cdma/lib/libsecril-client.so:system/rild/cdma/lib/libsecril-client.so \
-	vendor/samsung/jf-common/proprietary/rild/cdma/lib/libstlport.so:system/rild/cdma/lib/libstlport.so \
 	vendor/samsung/jf-common/proprietary/rild/cdma/lib/libxml.so:system/rild/cdma/lib/libxml.so \
 	vendor/samsung/jf-common/proprietary/rild/cdma/vendor/lib/libcneapiclient.so:system/rild/cdma/vendor/lib/libcneapiclient.so \
 	vendor/samsung/jf-common/proprietary/rild/cdma/vendor/lib/libconfigdb.so:system/rild/cdma/vendor/lib/libconfigdb.so \
@@ -229,7 +226,6 @@ PRODUCT_COPY_FILES += \
 	vendor/samsung/jf-common/proprietary/rild/usc/bin/rild:system/rild/usc/bin/rild \
 	vendor/samsung/jf-common/proprietary/rild/usc/bin/rmt_storage:system/rild/usc/bin/rmt_storage \
 	vendor/samsung/jf-common/proprietary/rild/usc/lib/libatparser.so:system/rild/usc/lib/libatparser.so \
-	vendor/samsung/jf-common/proprietary/rild/usc/lib/libcnefeatureconfig.so:system/rild/usc/lib/libcnefeatureconfig.so \
 	vendor/samsung/jf-common/proprietary/rild/usc/lib/libfactoryutil.so:system/rild/usc/lib/libfactoryutil.so \
 	vendor/samsung/jf-common/proprietary/rild/usc/lib/libomission_avoidance.so:system/rild/usc/lib/libomission_avoidance.so \
 	vendor/samsung/jf-common/proprietary/rild/usc/lib/libreference-ril.so:system/rild/usc/lib/libreference-ril.so \
@@ -237,7 +233,6 @@ PRODUCT_COPY_FILES += \
 	vendor/samsung/jf-common/proprietary/rild/usc/lib/librmnetctl.so:system/rild/usc/lib/librmnetctl.so \
 	vendor/samsung/jf-common/proprietary/rild/usc/lib/libsec-ril.so:system/rild/usc/lib/libsec-ril.so \
 	vendor/samsung/jf-common/proprietary/rild/usc/lib/libsecril-client.so:system/rild/usc/lib/libsecril-client.so \
-	vendor/samsung/jf-common/proprietary/rild/usc/lib/libstlport.so:system/rild/usc/lib/libstlport.so \
 	vendor/samsung/jf-common/proprietary/rild/usc/lib/libxml.so:system/rild/usc/lib/libxml.so \
 	vendor/samsung/jf-common/proprietary/rild/usc/vendor/lib/libcneapiclient.so:system/rild/usc/vendor/lib/libcneapiclient.so \
 	vendor/samsung/jf-common/proprietary/rild/usc/vendor/lib/libconfigdb.so:system/rild/usc/vendor/lib/libconfigdb.so \
@@ -261,7 +256,7 @@ PRODUCT_COPY_FILES += \
 	vendor/samsung/jf-common/proprietary/rild/vzw/etc/firmware/q6.b05:system/rild/vzw/etc/firmware/q6.b05 \
 	vendor/samsung/jf-common/proprietary/rild/vzw/etc/firmware/q6.b06:system/rild/vzw/etc/firmware/q6.b06 \
 	vendor/samsung/jf-common/proprietary/rild/vzw/etc/firmware/q6.mdt:system/rild/vzw/etc/firmware/q6.mdt \
-	vendor/samsung/jf-common/proprietary/rild/vzw/etc/firmware/vidc.b00:system/rild/vzw/etc/firmware/vidc.b00 \
+	vendor/samsung/jf-common/proprietary/rild/vzw/etc/firmware/vidc.b00:system/rild/vzw//etc/firmware/vidc.b00 \
 	vendor/samsung/jf-common/proprietary/rild/vzw/etc/firmware/vidc.b01:system/rild/vzw/etc/firmware/vidc.b01 \
 	vendor/samsung/jf-common/proprietary/rild/vzw/etc/firmware/vidc.b02:system/rild/vzw/etc/firmware/vidc.b02 \
 	vendor/samsung/jf-common/proprietary/rild/vzw/etc/firmware/vidc.b03:system/rild/vzw/etc/firmware/vidc.b03 \
@@ -274,7 +269,6 @@ PRODUCT_COPY_FILES += \
 	vendor/samsung/jf-common/proprietary/rild/vzw/bin/rild:system/rild/vzw/bin/rild \
 	vendor/samsung/jf-common/proprietary/rild/vzw/bin/rmt_storage:system/rild/vzw/bin/rmt_storage \
 	vendor/samsung/jf-common/proprietary/rild/vzw/lib/libatparser.so:system/rild/vzw/lib/libatparser.so \
-	vendor/samsung/jf-common/proprietary/rild/vzw/lib/libcnefeatureconfig.so:system/rild/vzw/lib/libcnefeatureconfig.so \
 	vendor/samsung/jf-common/proprietary/rild/vzw/lib/libfactoryutil.so:system/rild/vzw/lib/libfactoryutil.so \
 	vendor/samsung/jf-common/proprietary/rild/vzw/lib/libomission_avoidance.so:system/rild/vzw/lib/libomission_avoidance.so \
 	vendor/samsung/jf-common/proprietary/rild/vzw/lib/libreference-ril.so:system/rild/vzw/lib/libreference-ril.so \
@@ -282,7 +276,6 @@ PRODUCT_COPY_FILES += \
 	vendor/samsung/jf-common/proprietary/rild/vzw/lib/librmnetctl.so:system/rild/vzw/lib/librmnetctl.so \
 	vendor/samsung/jf-common/proprietary/rild/vzw/lib/libsec-ril.so:system/rild/vzw/lib/libsec-ril.so \
 	vendor/samsung/jf-common/proprietary/rild/vzw/lib/libsecril-client.so:system/rild/vzw/lib/libsecril-client.so \
-	vendor/samsung/jf-common/proprietary/rild/vzw/lib/libstlport.so:system/rild/vzw/lib/libstlport.so \
 	vendor/samsung/jf-common/proprietary/rild/vzw/lib/libxml.so:system/rild/vzw/lib/libxml.so \
 	vendor/samsung/jf-common/proprietary/rild/vzw/vendor/lib/libcneapiclient.so:system/rild/vzw/vendor/lib/libcneapiclient.so \
 	vendor/samsung/jf-common/proprietary/rild/vzw/vendor/lib/libconfigdb.so:system/rild/vzw/vendor/lib/libconfigdb.so \
