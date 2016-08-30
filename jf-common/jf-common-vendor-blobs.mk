@@ -256,7 +256,7 @@ PRODUCT_COPY_FILES += \
 	vendor/samsung/jf-common/proprietary/rild/vzw/etc/firmware/q6.b05:system/rild/vzw/etc/firmware/q6.b05 \
 	vendor/samsung/jf-common/proprietary/rild/vzw/etc/firmware/q6.b06:system/rild/vzw/etc/firmware/q6.b06 \
 	vendor/samsung/jf-common/proprietary/rild/vzw/etc/firmware/q6.mdt:system/rild/vzw/etc/firmware/q6.mdt \
-	vendor/samsung/jf-common/proprietary/rild/vzw/etc/firmware/vidc.b00:system/rild/vzw//etc/firmware/vidc.b00 \
+	vendor/samsung/jf-common/proprietary/rild/vzw/etc/firmware/vidc.b00:system/rild/vzw/etc/firmware/vidc.b00 \
 	vendor/samsung/jf-common/proprietary/rild/vzw/etc/firmware/vidc.b01:system/rild/vzw/etc/firmware/vidc.b01 \
 	vendor/samsung/jf-common/proprietary/rild/vzw/etc/firmware/vidc.b02:system/rild/vzw/etc/firmware/vidc.b02 \
 	vendor/samsung/jf-common/proprietary/rild/vzw/etc/firmware/vidc.b03:system/rild/vzw/etc/firmware/vidc.b03 \
